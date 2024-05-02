@@ -1,0 +1,62 @@
+/* CommentCard.css */
+
+.comment-section {
+    padding: 40px 0;
+}
+
+.comment-card {
+    border-radius: 8px;
+    box-shadow: 0 0 10px #ca4f02d9;
+    padding: 20px;
+    margin: 15px 0;
+    /* Increased margin for better separation */
+}
+
+.comment-header {
+    margin-bottom: 10px;
+    /* Reduced margin for better alignment */
+}
+
+.user-avatar {
+    width: 50px;
+    /* Slightly reduced avatar size */
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 15px;
+}
+
+.timestamp {
+    font-size: 0.8rem;
+    color: var(--timestamp-color);
+}
+
+.comment-content {
+    margin-bottom: 10px;
+    /* Reduced margin for better alignment */
+    text-align: left;
+}
+
+.comment-actions {
+    margin-top: 10px;
+    /* Reduced margin for better alignment */
+}
+
+.like-dislike a {
+    margin-right: 10px;
+}
+
+.reply {
+    font-size: 0.9rem;
+    font-weight: bold;
+}
+
+button {
+    background-color: var(--btn-background-color-secondary);
+    color: #fff;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 0.9rem;
+    transition: background-color 0.3s;
+}

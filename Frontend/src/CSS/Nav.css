@@ -1,0 +1,227 @@
+.header {
+  box-shadow: 0 2px 10px #6a6969;
+  width: 100%;
+  max-height: 120px;
+  z-index: 4;
+  position: sticky;
+
+
+}
+
+
+.header-content {
+  /* margin-top: -40px; */
+  /* position: relative; */
+  max-width: 1280px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  font-weight: bolder;
+
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  font-size: 1.3rem;
+  font-weight: bold;
+
+  color: var(--text-color);
+  text-decoration: none;
+  /* gap: 0.1rem; */
+}
+
+.logo-icon {
+  height: 70px;
+  width: auto;
+  object-fit: cover;
+}
+
+.logo-text {
+  font-size: 2rem;
+  font-weight: bold;
+
+}
+
+.nav {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+
+  /* Center the nav links vertically */
+}
+
+.nav-link {
+
+  color: black;
+  font-size: 1.125rem;
+  font-weight: 600;
+  transform: color 0.1s;
+  text-transform: capitalize;
+
+}
+
+.nav-link:active,
+.nav-link.active {
+  color: brown;
+  text-decoration: underline;
+}
+
+.nav-button {
+
+  border: none;
+  border-radius: 0.375rem;
+  background-color: var(--primary-color);
+
+  transform: all 0.1s;
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.nav-button:first-of-type {
+  margin-right: 3px;
+  /* Reduce the gap */
+}
+
+.nav-button:last-of-type {
+  margin-left: 3px;
+  /* Reduce the gap */
+}
+
+.nav-list {
+  padding: 0;
+  margin: 0;
+  display: flex;
+  gap: 5px;
+  /* Adjust the gap between list items */
+}
+
+.nav-list li {
+  margin: 0;
+  padding: 0;
+}
+
+@media screen and (max-width: 767px) {
+  .menu-button {
+    display: block;
+    /* Add styles for the hamburger menu icon */
+  }
+
+  .nav {
+    z-index: 4;
+    display: none;
+    height: 0;
+    flex-direction: column;
+
+
+    justify-content: center;
+    align-items: center;
+    /* Center horizontally */
+    position: absolute;
+    top: 106px;
+    left: 0;
+    width: 100%;
+      /* background-color: red; */
+    background-color: #fff;
+    /* transition: 1s ; */
+    overflow: hidden;
+  }
+
+  .nav.active {
+    padding: 14px 0 14px 0;
+    display: flex;
+    height: auto;
+    /* Change height to auto when active */
+  }
+
+  .nav ul {
+    padding: 0;
+    margin: 0;
+  }
+
+  .nav li {
+    margin-bottom: 6px;
+  }
+
+  .nav-link {
+    display: none;
+  }
+
+  /* New styles for positioning Logout button after nav-links in mobile view */
+  .nav {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .nav-link,
+  .nav-button {
+    order: 1;
+  }
+
+  .nav-button {
+    order: 2;
+  }
+
+     .nav-list {
+       flex-direction: column;
+       align-items: center;
+       justify-content: center;
+       /* Center horizontally */
+     }
+
+     .nav-list li {
+       margin: 0;
+       padding: 0;
+     }
+
+     .nav-button {
+       order: 1;
+       width: 100%;
+       margin-bottom: 5px;
+     }
+
+     /* Place signup button above login button */
+     .nav-list li:first-of-type .nav-button {
+       order: 2;
+     }
+
+
+
+  /* New styles for positioning Logout button below nav links */
+  .nav.active {
+    flex-direction: column;
+  }
+
+  .nav-button {
+    order: 1;
+    width: 100%;
+    margin-bottom: 5px;
+  }
+
+  .nav-link {
+    order: 2;
+  }
+}
+
+.menu-button {
+  display: none;
+
+  font-size: 1rem;
+  padding: 0.5rem 0.9rem;
+  font-weight: 600;
+}
+
+@media screen and (max-width: 768px) {
+  .menu-button {
+    display: block;
+  }
+}
+
+.menu-icon {
+  height: 1.7rem;
+  width: 1.7rem;
+  color: black;
+}

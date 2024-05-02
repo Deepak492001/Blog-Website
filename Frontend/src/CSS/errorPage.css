@@ -1,0 +1,50 @@
+/* ErrorPage component-specific styles */
+.error-page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 80vh;
+    background-color: var(--body-background-color);
+}
+
+.error-page>div {
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 600;
+    color: var(--primary-color);
+    margin-bottom: 2rem;
+}
+
+.error-page img {
+    width: 650px;
+    /* Increased size for laptop screens */
+    margin-bottom: 2rem;
+}
+
+@media (max-width: 767px) {
+
+    /* Responsive styles for iPhone SE and similar screens */
+    .error-page img {
+        width: 200px;
+        /* Adjust for smaller screens */
+    }
+
+    .error-page>div {
+        font-size: 1.6rem;
+        /* Adjust font size if needed */
+    }
+}
+
+/* Optional styling for additional elements */
+.error-page p {
+    font-size: 1.2rem;
+    color: var(--gray);
+    line-height: 1.6;
+}
+
+.error-page a {
+    color: var(--accent-color);
+    font-weight: 500;
+    text-decoration: underline;
+}

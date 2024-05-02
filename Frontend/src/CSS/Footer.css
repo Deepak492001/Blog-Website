@@ -1,0 +1,138 @@
+/* footer */
+/* Footer.css */
+
+/* Styles for the footer container */
+.footer-container {
+  top: 20px;
+  background-color: #f8f9fa;
+  position: relative;
+  padding: 40px 20px;
+  font-family: "Allura", cursive;
+  color: #333;
+  /* font-family: 'Allura', cursive;
+    font-family: 'Poppins', sans-serif;
+    font-family: 'Roboto', sans-serif; */
+}
+
+/* Styles for the top section of the footer */
+.footer-top {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+/* Styles for the social icons */
+.social {
+  margin-top: 20px;
+}
+
+.social-link {
+  margin-right: 10px;
+}
+
+.social-icon {
+  width: 30px;
+  height: 30px;
+  /* Add specific colors to each social icon */
+}
+
+/* LinkedIn icon color */
+.linkedin {
+  fill: #0077b5;
+  /* Replace with your desired color */
+}
+
+/* Instagram icon color */
+.instagram {
+  fill: #e4405f;
+  /* Replace with your desired color */
+}
+
+/* Microsoft icon color */
+.microsoft {
+  fill: #00a1f1;
+  /* Replace with your desired color */
+}
+
+/* Twitter icon color */
+.twitter {
+  fill: #1da1f2;
+  /* Replace with your desired color */
+}
+
+/* Styles for the footer grid */
+.footer-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+/* Styles for each column in the footer grid */
+.footer-grid-column {
+  color: #333;
+}
+
+.footer-grid-heading {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+.footer-links-list {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.footer-link {
+  text-decoration: none;
+  color: #777;
+  font-size: 0.95rem;
+  transition: color 0.3s ease;
+}
+
+.footer-link:hover {
+  color: #000;
+}
+
+/* Styles for the copyright section */
+.footer-copyright {
+  text-align: center;
+  font-size: 0.9rem;
+  color: #777;
+  margin-top: 30px;
+}
+
+/* Media queries for responsiveness */
+@media screen and (max-width: 480px) {
+
+  /* Adjustments for iPhone screens and smaller devices */
+  .footer-container {
+    padding: 20px 15px;
+  }
+
+  .footer-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .footer-grid-column {
+    margin-bottom: 20px;
+  }
+
+  .social-icon {
+    width: 25px;
+    height: 25px;
+  }
+
+  .logo-link {
+    font-size: 1.1rem;
+  }
+
+  .filler-text {
+    font-size: 0.9rem;
+  }
+}
